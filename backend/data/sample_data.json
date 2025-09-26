@@ -1,0 +1,489 @@
+{
+    "description": "Sample data for Health First AI Supply Chain Management System",
+    "created_at": "2024-01-15T00:00:00Z",
+    "version": "1.0",
+  
+    "suppliers": [
+      {
+        "supplier_id": "SUPP001",
+        "supplier_name": "MediSupply Corp",
+        "contact_info": {
+          "email": "contact@medisupply.com",
+          "phone": "555-0101",
+          "address": "123 Medical Plaza, Boston, MA 02101",
+          "contact_person": "John Smith"
+        },
+        "product_categories": ["pharmaceuticals", "medical_supplies"],
+        "regions_served": ["northeast", "southeast"],
+        "contract_start_date": "2024-01-01T00:00:00Z",
+        "contract_end_date": "2025-12-31T00:00:00Z",
+        "performance_metrics": {
+          "on_time_delivery_rate": 0.95,
+          "quality_score": 4.2,
+          "average_lead_time_days": 7.5,
+          "cost_competitiveness": 0.85,
+          "reliability_score": 0.92,
+          "communication_score": 4.5
+        },
+        "risk_level": "low"
+      },
+      {
+        "supplier_id": "SUPP002",
+        "supplier_name": "HealthTech Solutions",
+        "contact_info": {
+          "email": "sales@healthtech.com",
+          "phone": "555-0202",
+          "address": "456 Innovation Drive, Chicago, IL 60601",
+          "contact_person": "Sarah Johnson"
+        },
+        "product_categories": ["ppe", "diagnostic_equipment"],
+        "regions_served": ["midwest", "west_coast"],
+        "contract_start_date": "2024-03-01T00:00:00Z",
+        "contract_end_date": "2026-02-28T00:00:00Z",
+        "performance_metrics": {
+          "on_time_delivery_rate": 0.89,
+          "quality_score": 4.5,
+          "average_lead_time_days": 5.2,
+          "cost_competitiveness": 0.78,
+          "reliability_score": 0.87,
+          "communication_score": 4.8
+        },
+        "risk_level": "medium"
+      },
+      {
+        "supplier_id": "SUPP003",
+        "supplier_name": "Global Medical Devices",
+        "contact_info": {
+          "email": "orders@globalmedical.com",
+          "phone": "555-0303",
+          "address": "789 Tech Boulevard, San Francisco, CA 94105",
+          "contact_person": "Mike Chen"
+        },
+        "product_categories": ["surgical_instruments", "hospital_equipment"],
+        "regions_served": ["west_coast", "mountain_states"],
+        "contract_start_date": "2023-06-01T00:00:00Z",
+        "contract_end_date": "2025-05-31T00:00:00Z",
+        "performance_metrics": {
+          "on_time_delivery_rate": 0.92,
+          "quality_score": 4.7,
+          "average_lead_time_days": 12.0,
+          "cost_competitiveness": 0.82,
+          "reliability_score": 0.94,
+          "communication_score": 4.3
+        },
+        "risk_level": "low"
+      },
+      {
+        "supplier_id": "SUPP004",
+        "supplier_name": "Digital Health Partners",
+        "contact_info": {
+          "email": "partnerships@digitalhealth.com",
+          "phone": "555-0404",
+          "address": "321 Digital Way, Austin, TX 78701",
+          "contact_person": "Lisa Rodriguez"
+        },
+        "product_categories": ["digital_health", "home_healthcare"],
+        "regions_served": ["southwest", "southeast"],
+        "contract_start_date": "2024-02-01T00:00:00Z",
+        "contract_end_date": "2026-01-31T00:00:00Z",
+        "performance_metrics": {
+          "on_time_delivery_rate": 0.88,
+          "quality_score": 4.1,
+          "average_lead_time_days": 8.5,
+          "cost_competitiveness": 0.90,
+          "reliability_score": 0.85,
+          "communication_score": 4.6
+        },
+        "risk_level": "medium"
+      }
+    ],
+  
+    "inventory_items": [
+      {
+        "product_id": "PROD001",
+        "product_name": "N95 Respirator Masks",
+        "product_category": "ppe",
+        "location": "Warehouse A - Boston",
+        "current_stock": 5000,
+        "safety_stock_level": 2000,
+        "reorder_point": 3000,
+        "max_stock_level": 10000,
+        "unit_cost": 2.50,
+        "supplier_id": "SUPP002",
+        "average_daily_usage": 150,
+        "lead_time_days": 5
+      },
+      {
+        "product_id": "PROD002",
+        "product_name": "Surgical Gloves (Box of 100)",
+        "product_category": "ppe",
+        "location": "Warehouse B - Chicago",
+        "current_stock": 1500,
+        "safety_stock_level": 1000,
+        "reorder_point": 1200,
+        "max_stock_level": 5000,
+        "unit_cost": 15.00,
+        "supplier_id": "SUPP002",
+        "average_daily_usage": 80,
+        "lead_time_days": 7
+      },
+      {
+        "product_id": "PROD003",
+        "product_name": "IV Fluid Bags (1000ml)",
+        "product_category": "medical_supplies",
+        "location": "Warehouse A - Boston",
+        "current_stock": 800,
+        "safety_stock_level": 500,
+        "reorder_point": 600,
+        "max_stock_level": 2000,
+        "unit_cost": 8.75,
+        "supplier_id": "SUPP001",
+        "average_daily_usage": 45,
+        "lead_time_days": 8
+      },
+      {
+        "product_id": "PROD004",
+        "product_name": "Disposable Syringes (10ml)",
+        "product_category": "medical_supplies",
+        "location": "Warehouse C - San Francisco",
+        "current_stock": 3200,
+        "safety_stock_level": 1500,
+        "reorder_point": 2000,
+        "max_stock_level": 8000,
+        "unit_cost": 0.75,
+        "supplier_id": "SUPP001",
+        "average_daily_usage": 120,
+        "lead_time_days": 6
+      },
+      {
+        "product_id": "PROD005",
+        "product_name": "Blood Pressure Monitors",
+        "product_category": "diagnostic_equipment",
+        "location": "Warehouse B - Chicago",
+        "current_stock": 150,
+        "safety_stock_level": 50,
+        "reorder_point": 75,
+        "max_stock_level": 300,
+        "unit_cost": 125.00,
+        "supplier_id": "SUPP002",
+        "average_daily_usage": 5,
+        "lead_time_days": 14
+      },
+      {
+        "product_id": "PROD006",
+        "product_name": "Surgical Scissors",
+        "product_category": "surgical_instruments",
+        "location": "Warehouse C - San Francisco",
+        "current_stock": 200,
+        "safety_stock_level": 100,
+        "reorder_point": 120,
+        "max_stock_level": 500,
+        "unit_cost": 45.00,
+        "supplier_id": "SUPP003",
+        "average_daily_usage": 8,
+        "lead_time_days": 12
+      },
+      {
+        "product_id": "PROD007",
+        "product_name": "Insulin Pens",
+        "product_category": "pharmaceuticals",
+        "location": "Warehouse A - Boston",
+        "current_stock": 600,
+        "safety_stock_level": 300,
+        "reorder_point": 400,
+        "max_stock_level": 1200,
+        "unit_cost": 65.00,
+        "supplier_id": "SUPP001",
+        "average_daily_usage": 25,
+        "lead_time_days": 10
+      },
+      {
+        "product_id": "PROD008",
+        "product_name": "Oxygen Concentrators",
+        "product_category": "hospital_equipment",
+        "location": "Warehouse B - Chicago",
+        "current_stock": 25,
+        "safety_stock_level": 10,
+        "reorder_point": 15,
+        "max_stock_level": 50,
+        "unit_cost": 1200.00,
+        "supplier_id": "SUPP003",
+        "average_daily_usage": 1,
+        "lead_time_days": 21
+      },
+      {
+        "product_id": "PROD009",
+        "product_name": "Home Glucose Test Kits",
+        "product_category": "home_healthcare",
+        "location": "Warehouse D - Austin",
+        "current_stock": 400,
+        "safety_stock_level": 200,
+        "reorder_point": 250,
+        "max_stock_level": 800,
+        "unit_cost": 35.00,
+        "supplier_id": "SUPP004",
+        "average_daily_usage": 15,
+        "lead_time_days": 9
+      },
+      {
+        "product_id": "PROD010",
+        "product_name": "Digital Thermometers",
+        "product_category": "digital_health",
+        "location": "Warehouse D - Austin",
+        "current_stock": 180,
+        "safety_stock_level": 100,
+        "reorder_point": 120,
+        "max_stock_level": 400,
+        "unit_cost": 25.00,
+        "supplier_id": "SUPP004",
+        "average_daily_usage": 12,
+        "lead_time_days": 7
+      }
+    ],
+  
+    "purchase_orders": [
+      {
+        "order_id": "PO20240115001",
+        "supplier_id": "SUPP001",
+        "order_date": "2024-01-15T09:00:00Z",
+        "expected_delivery_date": "2024-01-25T17:00:00Z",
+        "status": "in_transit",
+        "items": [
+          {
+            "product_id": "PROD003",
+            "product_name": "IV Fluid Bags (1000ml)",
+            "quantity": 500,
+            "unit_price": 8.75
+          },
+          {
+            "product_id": "PROD007",
+            "product_name": "Insulin Pens",
+            "quantity": 200,
+            "unit_price": 65.00
+          }
+        ],
+        "total_amount": 17375.00,
+        "notes": "Urgent order for winter demand surge"
+      },
+      {
+        "order_id": "PO20240118002",
+        "supplier_id": "SUPP002",
+        "order_date": "2024-01-18T14:30:00Z",
+        "expected_delivery_date": "2024-01-25T16:00:00Z",
+        "status": "approved",
+        "items": [
+          {
+            "product_id": "PROD001",
+            "product_name": "N95 Respirator Masks",
+            "quantity": 2000,
+            "unit_price": 2.50
+          },
+          {
+            "product_id": "PROD002",
+            "product_name": "Surgical Gloves (Box of 100)",
+            "quantity": 300,
+            "unit_price": 15.00
+          }
+        ],
+        "total_amount": 9500.00,
+        "notes": "Regular restocking order"
+      },
+      {
+        "order_id": "PO20240120003",
+        "supplier_id": "SUPP003",
+        "order_date": "2024-01-20T11:15:00Z",
+        "expected_delivery_date": "2024-02-02T12:00:00Z",
+        "status": "pending",
+        "items": [
+          {
+            "product_id": "PROD008",
+            "product_name": "Oxygen Concentrators",
+            "quantity": 10,
+            "unit_price": 1200.00
+          }
+        ],
+        "total_amount": 12000.00,
+        "notes": "Equipment replacement order"
+      }
+    ],
+  
+    "historical_sales": [
+      {
+        "date": "2024-01-01",
+        "product_category": "ppe",
+        "region": "northeast",
+        "actual_demand": 1250,
+        "factors": ["flu_season", "normal_operations"]
+      },
+      {
+        "date": "2024-01-01",
+        "product_category": "medical_supplies",
+        "region": "northeast", 
+        "actual_demand": 980,
+        "factors": ["seasonal_increase", "hospital_capacity"]
+      },
+      {
+        "date": "2024-01-01",
+        "product_category": "pharmaceuticals",
+        "region": "midwest",
+        "actual_demand": 1850,
+        "factors": ["chronic_conditions", "insurance_renewals"]
+      },
+      {
+        "date": "2024-01-02",
+        "product_category": "ppe",
+        "region": "northeast",
+        "actual_demand": 1180,
+        "factors": ["flu_season", "weekend_reduction"]
+      },
+      {
+        "date": "2024-01-02",
+        "product_category": "diagnostic_equipment",
+        "region": "west_coast",
+        "actual_demand": 220,
+        "factors": ["routine_testing", "clinic_operations"]
+      }
+    ],
+  
+    "market_intelligence_sample": {
+      "social_media": {
+        "mentions_7d": 6550,
+        "mentions_change_pct": 32.0,
+        "sentiment_positive": 0.67,
+        "sentiment_negative": 0.12,
+        "sentiment_neutral": 0.21,
+        "share_of_voice": {
+          "Health First": 0.40,
+          "Cardinal Health": 0.25,
+          "Cencora": 0.20,
+          "Others": 0.15
+        },
+        "trending_topics": [
+          "#PPEshortage",
+          "#SeasonalAllergies", 
+          "#Telehealth",
+          "#FluSeason2024",
+          "#SupplyChain",
+          "#DigitalHealth"
+        ],
+        "geographical_hotspots": {
+          "Midwest": 120,
+          "Southeast": 80,
+          "Northeast": 60,
+          "West Coast": 95,
+          "Southwest": 45
+        }
+      },
+      "competitors": [
+        {
+          "name": "Cardinal Health",
+          "market_share": 0.25,
+          "supply_chain_status": "disrupted",
+          "recent_news": [
+            "Announced 8% price cut on surgical gloves in Midwest region",
+            "Expanded distribution network in rural areas"
+          ],
+          "price_changes": [
+            {
+              "product": "Surgical gloves",
+              "change_percent": -8.0,
+              "effective_date": "2024-01-15",
+              "region": "midwest"
+            }
+          ]
+        },
+        {
+          "name": "Cencora",
+          "market_share": 0.22,
+          "supply_chain_status": "normal",
+          "recent_news": [
+            "Launched new AI-powered inventory management system",
+            "Partnership with major health system announced"
+          ],
+          "price_changes": []
+        }
+      ],
+      "economic_indicators": {
+        "unemployment_rate": 3.7,
+        "consumer_confidence_index": 102.5,
+        "healthcare_spending_growth": 4.2,
+        "inflation_rate": 3.1,
+        "healthcare_cpi": 4.8
+      },
+      "weather_alerts": [
+        {
+          "alert_id": "WX20240115001",
+          "alert_type": "winter_storm",
+          "severity": "medium",
+          "affected_regions": ["northeast", "midwest"],
+          "population_affected": 1200000,
+          "healthcare_facilities_affected": 25,
+          "expected_duration_hours": 48,
+          "demand_impact_forecast": {
+            "ppe": 1.4,
+            "medical_supplies": 1.2,
+            "pharmaceuticals": 1.1
+          }
+        }
+      ]
+    },
+  
+    "alerts_sample": [
+      {
+        "alert_id": "ALT20240115001",
+        "alert_type": "inventory_low_stock",
+        "severity": "high",
+        "title": "Low Stock Alert: IV Fluid Bags",
+        "description": "IV Fluid Bags stock level below safety threshold at Warehouse A",
+        "source": "inventory_optimization",
+        "product_id": "PROD003",
+        "location": "Warehouse A - Boston"
+      },
+      {
+        "alert_id": "ALT20240115002", 
+        "alert_type": "supplier_performance",
+        "severity": "medium",
+        "title": "Supplier Performance Decline",
+        "description": "HealthTech Solutions on-time delivery rate dropped below 90%",
+        "source": "supplier_coordination",
+        "supplier_id": "SUPP002"
+      },
+      {
+        "alert_id": "ALT20240115003",
+        "alert_type": "demand_spike",
+        "severity": "medium",
+        "title": "Demand Forecast Increase",
+        "description": "PPE demand forecast increased 25% due to flu season",
+        "source": "demand_prediction",
+        "product_category": "ppe",
+        "region": "northeast"
+      }
+    ],
+  
+    "configurations": {
+      "demand_forecasting": {
+        "forecast_horizon_days": 90,
+        "confidence_interval": 0.95,
+        "update_frequency_hours": 6,
+        "models_enabled": ["linear_regression", "random_forest", "xgboost"]
+      },
+      "inventory_optimization": {
+        "safety_stock_multiplier": 1.5,
+        "reorder_point_buffer": 0.2,
+        "max_inventory_multiplier": 3.0,
+        "service_level_target": 0.95
+      },
+      "supplier_management": {
+        "performance_threshold": 0.90,
+        "quality_score_minimum": 4.0,
+        "lead_time_tolerance_days": 2,
+        "contract_renewal_alert_days": 90
+      },
+      "market_intelligence": {
+        "social_media_update_interval_minutes": 30,
+        "competitor_monitoring_interval_hours": 4,
+        "economic_data_update_interval_hours": 24,
+        "sentiment_spike_threshold": 2.0
+      }
+    }
+  }

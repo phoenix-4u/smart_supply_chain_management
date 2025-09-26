@@ -1,0 +1,100 @@
+# Core Framework
+fastapi
+uvicorn
+streamlit
+pydantic
+python-multipart
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+aiosqlite
+
+# Machine Learning & Data Science
+scikit-learn
+pandas
+numpy
+scipy
+joblib
+xgboost
+lightgbm
+
+# Data Visualization
+plotly
+matplotlib
+seaborn
+altair
+
+# HTTP Requests & APIs
+httpx
+requests
+aiohttp
+
+# Async & Concurrency
+asyncio
+websockets
+celery
+redis
+
+# Data Processing
+openpyxl
+python-dateutil
+pytz
+schedule
+
+# Monitoring & Logging
+loguru
+prometheus-client
+sentry-sdk
+
+# Environment & Configuration
+python-dotenv
+pydantic-settings
+configparser
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+httpx
+faker
+
+# Security
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Text Processing & NLP
+nltk
+textblob
+vaderSentiment
+
+# Social Media & External APIs
+tweepy
+newsapi-python
+yfinance
+
+# Utility Libraries
+arrow
+click
+tqdm
+python-slugify
+
+# Development Tools
+black
+flake8
+mypy
+pre-commit
+
+# Production Dependencies
+gunicorn
+# nginx (system package, not pip)
+# docker (system package, not pip)
+# docker-compose (system package, not pip)
+
+# Additional Streamlit Components
+streamlit-option-menu
+streamlit-aggrid
+streamlit-plotly-events
+streamlit-autorefresh
